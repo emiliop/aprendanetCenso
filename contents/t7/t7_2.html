@@ -1,0 +1,94 @@
+<span data-aside="false"></span>
+
+<style>
+    .clase-bkg11 {
+   background-image: url('images/interfaz/bk_011.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: inherit;
+   width: 100%;
+ }   
+
+
+
+<style type="text/css">
+.box{
+    display: none;        
+    z-index: 999;
+    float:left;
+    overflow:hidden;
+    position:relative;
+    height: auto;
+</style>
+
+<div class="container-fluid clase-bkg11">
+    
+    <div class="row middle">
+        
+        <div class="col-xs-12 col-sm-12 col-md-offset-2 col-md-10 col-lg-offset-2 col-lg-10">
+         <div class="row middle">   
+            <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6">
+            <h1 style="font-family: 'OpenSans-Light';">Despedida</h1>
+            <br>
+            <p>Hemos finalizado este recorrido del DMC y sus componentes, así como las recomendaciones de uso y cuidado.
+            <br><br>
+            Recordemos que podemos acceder al cuestionario de entrevista a través de la opción CNPV.
+            <br> <br>
+            <span class="bold">Haga clic sobre el ícono resaltado.</span>
+                </p>
+            <br><br>
+       <div class="box red">
+             <p>
+            Debemos tener claros nuestros datos de usuario y contraseña para ingresar al cuestionario y diligenciarlo. La forma de utilizar el cuestionario será explicado más profundamente en el módulo Simulador.
+            </p>
+            
+              <br>  
+            <h3 style="font-family: 'OpenSans-Light';">¡Éxitos!</h3> 
+                </div>
+               
+                
+            
+                
+            </div>
+            
+            <div class="col-xs-12 col-sm-12 col-lg-4 col-lg-offset-0 col-md-4 col-md-offset-0">
+                
+            <object value="red" id="objectosvg12" type="image/svg+xml" data="images/t7/t7_2b.svg" style="width:50vh">
+        <p>Su Navegador no soporta svg</p>
+      </object>
+            
+               
+            </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script>
+  $(function(){
+    $("object").load(function(){
+        var svg = document.getElementById("objectosvg12").getSVGDocument();
+        var areas = $(svg).find('#Capa_1');
+        var vectorCapas = ["Capa_1","Capa_2","Capa_3"];
+        $(areas).on("click",'.area',function() {
+          $(this).css('fill-opacity', '0.9');
+          $(svg).find("#" + vectorCapas[parseInt($(this).attr("data-ref"))]).css('display', 'block');
+           $(".box").not(".red").hide();
+                $(".red").show();
+        });
+
+        $(areas).on("mouseover",'.area',function() {
+          $(this).css('fill-opacity', '0.5');
+        });
+
+        $(areas).on("mouseout",'.area',function() {
+          $(this).css('fill-opacity', '1');
+        });
+    });
+  });
+</script>

@@ -1,0 +1,93 @@
+@import 'mixin/_mediaqueries.scss';
+@import 'mixin/_fonts.scss';
+
+html{
+
+  @include respond-to(xs){ font-size: 0.8em; }
+  @include respond-to(sm){ font-size: 0.9em; }
+  @include respond_to(md){ font-size: 1.0em; }
+  @include respond-to(lg){ font-size: 1.2em; }
+
+  body{
+    font-family: 'OpenSans-Light';
+    h1 {font-weight: 300; font-size: 2.5rem; font-family: 'OpenSans-Bold'; margin:0; padding: 0;}
+    h2 {font-weight: 400; font-size: 1.8rem; line-height:1.8rem; margin:0; padding: 0;}
+    h3 {font-weight: 300; font-size: 1.7rem; line-height:1.5rem; margin:0; padding: 0;}
+    h4 {font-weight: 300; font-size: 1.6rem; line-height:1.4rem; margin:0; padding: 0;}
+    h5 {font-weight: 600; font-size: 1.5rem; line-height:1.5rem;font-style:italic; margin:0; padding: 0;}
+    h6 {font-weight: 600; font-size: 1.2rem; line-height:1.2rem; margin:0; padding: 0;}
+    p
+    {
+      font-size:1rem;
+      font-family: 'OpenSans-Regular';
+      font-style: normal;
+      font-weight: normal;
+      margin: 0;
+      padding: 0;
+    }
+    a
+    {
+      text-decoration: none;
+      -webkit-transition:all 0.3s ease;
+      -o-transition:all 0.3s ease;
+      transition:all 0.3s ease;
+      &:hover{ opacity:0.7; }
+      &:visited{ background-color:rgba(0,0,0,0.4) !important; }
+    }
+    hr
+    {
+      border: 0;
+      height: 2px;
+      background-image: linear-gradient(to right, rgba(50, 61, 26, 0), rgba(50, 61, 26, 0.75), rgba(50, 61, 26, 0));
+    }
+  }
+}
+
+.italic {
+  font-weight: 400;
+  font-style:italic;
+}
+
+.bold {
+  font-weight:600 !important;
+}
+
+.xbold {
+  font-family:'OpenSans-Bold';
+  font-weight: 800 !important;
+}
+
+.light {
+  font-family:'OpenSans-Light';
+  font-weight: 300 !important;
+}
+
+.txtDerecha {
+  text-align:left !important;
+}
+
+.txtIzquierda {
+  text-align:right !important;
+}
+
+.txtCentrado {
+  text-align:center !important;
+}
+
+
+
+.incrementFont
+{
+  @include respond-to(xs){ font-size: 0.9em !important; }
+  @include respond-to(sm){ font-size: 1.0em !important; }
+  @include respond_to(md){ font-size: 1.1em !important; }
+  @include respond-to(lg){ font-size: 1.4em !important; }
+}
+
+.incrementFontMax
+{
+  @include respond-to(xs){ font-size: 1em !important; }
+  @include respond-to(sm){ font-size: 1.1em !important; }
+  @include respond_to(md){ font-size: 1.2em !important; }
+  @include respond-to(lg){ font-size: 1.45em !important; }
+}

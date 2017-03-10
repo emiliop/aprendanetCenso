@@ -1,0 +1,109 @@
+<script>
+  ocultaRetro(9);
+</script>
+
+<style>
+  .color3{
+    background-color: #4a8245;
+  }
+
+  /*Estilo fondo*/
+.set-bkg22 {
+    background-image: url('images/interfaz/bk_005.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: inherit;
+    width: 100%;
+}
+
+ /* Acordeon */
+
+ *{ font-family: sans-serif; margin: 0;}
+ dl{ margin: 30px auto; width: 65vw; }
+ dt, dd{ padding: 30px; }
+ dt{ color: white; border: 2px solid rgba(255, 255, 255, 0.5); border-top: 2px solid rgba(255, 255, 255, 0.5); cursor: pointer; }
+ dd{   display: none; line-height: 0.2em; color:#fff;}
+ dt.activo2, dt:hover{ background: rgba(255, 255, 255, 0.2); }
+
+ dt:before{ content: "▸"; margin-right: 10px; }
+ dt.activo2:before{ content: "▾"; }
+ 
+
+</style>
+
+<div class="container-fluid contenedor-v set-bkg22 center-md center-lg" data-aside="false"> <!-- Lo utilizamos para centrar todos los elementos-->
+
+  <div class="row center center-xs center-sm center-md center-lg" style="border-radius: 50px; color: black;">
+   <div class="col-xs-12 col-sm-12 center-xs center-sm center-md center-lg col-md-12  col-lg-12  ">
+    <br><br>
+        <p style="text-align:center; color:#fff;">
+    <h1 style="color:white; font-family: 'OpenSans-Light'; margin:5vh auto 3vh auto; text-align: center;"><span class="xbold">3.1. </span>Corriente directa</h1>          
+  
+    </div> 
+
+
+  <div class="row center-xs center-sm center-md center-lg">
+   <div class="col-xs-12 col-sm-12 center-xs center-sm center-md center-lg  col-md-12 col-lg-12">
+    <dl>
+      <dt>
+        <p style="text-align:center; color:#fff;">
+          <span class="xbold">1.</span>  <span> Conecten el extremo del cable USB al puerto USB del conector de corriente.</span>
+        </p>
+      </dt>
+      <dd>
+        <object id="objectosvg" alt="1. Se ilustra en detalle un cable USB (puerto de conexión)." title="1. Carga - Cable USB" type="image/svg+xml" data="images/t4/t4_1b.svg" style="text-align: center;">
+          <p>Su Navegador no soporta svg</p>
+        </object> 
+      </dd>
+      <dt>
+        <p style="text-align:center; color:#fff;">
+          <span class="xbold">2.</span>  <span>Lleven el conector a la toma el&eacute;ctrica.</span>
+        </p>
+      </dt>
+      <dd>
+        <object id="objectosvg" alt="2. Imagen de conector a corriente eléctrica." title="2. Carga - Conector a corriente eléctrica" type="image/svg+xml" data="images/t4/t4_1c.svg" style="text-align: center;">
+          <p>Su Navegador no soporta svg</p>
+        </object> 
+      </dd>
+      <dt>
+        <p style="text-align:center; color:#fff;">
+          <span class="xbold">3.</span>  <span> Conecten el puerto micro USB (el otro extremo del cable) al DMC.</span>
+        </p>
+      </dt>
+      <dd>
+        <object id="objectosvg" alt="3. Dispositivo DMC." title="3. Carga - Dispositivo DMC" type="image/svg+xml" data="images/t4/t4_1d.svg" style="text-align: center;">
+          <p>Su Navegador no soporta svg</p>
+        </object> 
+      </dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  $('dl dd').hide();
+  $('dl dt').click(function(){
+    if ($(this).hasClass('activo2')) {
+      $(this).removeClass('activo2');
+      $(this).next().slideUp();
+    } else {
+      $('dl dt').removeClass('activo2');
+      $(this).addClass('activo2');
+      $('dl dd').slideUp();
+      $(this).next().slideDown();
+    }
+  });
+</script>
+

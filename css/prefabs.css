@@ -1,0 +1,612 @@
+/*============================================================*/
+/*Mixin Flex Container*/
+/*============================================================*/
+/*Mixin Flex children*/
+/*============================================================*/
+/*Mixin Animation Header*/
+@-webkit-keyframes cnpv-out {
+  100% {
+    width: 20rem;
+    height: 20rem;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes cnpv-out {
+  100% {
+    width: 20rem;
+    height: 20rem;
+    opacity: 1;
+  }
+}
+
+@keyframes cnpv-out {
+  100% {
+    width: 20rem;
+    height: 20rem;
+    opacity: 1;
+  }
+}
+
+/*delays*/
+.delay0 {
+  animation-delay: 0s !important;
+  -webkit-animation-delay: 0s !important;
+  -o-animation-delay: 0s !important;
+}
+
+.delay1 {
+  animation-delay: 0.5s !important;
+  -webkit-animation-delay: 0.5s !important;
+  -o-animation-delay: 0.5s !important;
+}
+
+.delay2 {
+  animation-delay: 1s !important;
+  -webkit-animation-delay: 1s !important;
+  -o-animation-delay: 1s !important;
+}
+
+.delay3 {
+  animation-delay: 1.5s !important;
+  -webkit-animation-delay: 1.5s !important;
+  -o-animation-delay: 1.5s !important;
+}
+
+.delay4 {
+  animation-delay: 2s !important;
+  -webkit-animation-delay: 2s !important;
+  -o-animation-delay: 2s !important;
+}
+
+.delay5 {
+  animation-delay: 2.5s !important;
+  -webkit-animation-delay: 2.5s !important;
+  -o-animation-delay: 2.5s !important;
+}
+
+.delay6 {
+  animation-delay: 3s !important;
+  -webkit-animation-delay: 3s !important;
+  -o-animation-delay: 3s !important;
+}
+
+.delay7 {
+  animation-delay: 3.5s !important;
+  -webkit-animation-delay: 3.5s !important;
+  -o-animation-delay: 3.5s !important;
+}
+
+.delay8 {
+  animation-delay: 4s !important;
+  -webkit-animation-delay: 4s !important;
+  -o-animation-delay: 4s !important;
+}
+
+.delay9 {
+  animation-delay: 4.5s !important;
+  -webkit-animation-delay: 4.5s !important;
+  -o-animation-delay: 4.5s !important;
+}
+
+.delay10 {
+  animation-delay: 5s !important;
+  -webkit-animation-delay: 5s !important;
+  -o-animation-delay: 5s !important;
+}
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+#portada1 {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-align-items: center;
+  -ms-align-items: center;
+  -ms-flex-pack: center;
+  -moz-align-items: center;
+  align-items: center;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+}
+
+#portada1 h1 {
+  text-align: center;
+  padding-top: 1rem;
+  font-size: 4em;
+  font-weight: 900;
+  color: #fff !important;
+}
+
+#portada1 h3 {
+  margin: 0 auto;
+  text-align: center;
+  color: #fff !important;
+}
+
+#portada1 img {
+  width: 40vmax;
+  margin: 1.5rem auto;
+}
+
+#portada1 div {
+  padding: 1em;
+  width: auto;
+  height: auto;
+  border: 2px solid #fff;
+  border-radius: 10px;
+}
+
+#portada1 div p {
+  font-size: 1.1em;
+  text-align: center;
+  color: #fff !important;
+}
+
+/*=================================================================================================*/
+/*=================================================================================================*/
+.main {
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #fff;
+}
+
+.main h1 {
+  color: rgba(255, 255, 255, 0.5);
+  text-align: center;
+}
+
+.main h2 {
+  margin: 1rem auto;
+  text-align: center;
+  color: #fff !important;
+}
+
+.main .container-tab {
+  position: relative;
+  width: 90%;
+  height: auto;
+  overflow: hidden;
+  display: block;
+  flex: 1;
+  align-self: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .container-tab {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.main .container-tab .menu-tab {
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  height: auto;
+}
+
+.main .container-tab .menu-tab .item-self {
+  -webkit-flex-basis: 33%;
+  -ms-flex-basis: 33%;
+  -moz-flex-basis: 33%;
+  flex-basis: 33%;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  height: 10rem;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .container-tab .menu-tab .item-self {
+    -webkit-flex-basis: 100%;
+    -ms-flex-basis: 100%;
+    -moz-flex-basis: 100%;
+    flex-basis: 100%;
+    height: 8rem;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .main .container-tab .menu-tab .item-self {
+    -webkit-flex-basis: 100%;
+    -ms-flex-basis: 100%;
+    -moz-flex-basis: 100%;
+    flex-basis: 100%;
+    height: 11rem;
+  }
+}
+
+.main .container-tab .menu-tab .item-self:hover {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.main .container-tab .menu-tab .item-self.visto {
+  background-color: rgba(255, 255, 255, 0.1) !important;
+}
+
+.main .container-tab .menu-tab .item-self .toptab {
+  display: flex;
+  width: 100%;
+  position: relative;
+  padding-top: 1em;
+  -webkit-flex-wrap: wrap;
+  flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .container-tab .menu-tab .item-self .toptab {
+    justify-content: center;
+    padding-top: 1.2em;
+  }
+}
+
+.main .container-tab .menu-tab .item-self .toptab .letter {
+  font-family: "OpenSans-Bold";
+  font-size: 2.5rem;
+  font-weight: 800;
+  margin: 0 0.5rem 0 1rem;
+  color: rgba(255, 255, 255, 0.61);
+  display: inline-block;
+  text-align: center;
+}
+
+.main .container-tab .menu-tab .item-self .toptab .elementos {
+  display: flex;
+}
+
+.main .container-tab .menu-tab .item-self .toptab .elementos .iconomultimedia {
+  color: #fff;
+  font-size: 1.5rem;
+  font-weight: 600;
+  flex-basis: 2rem;
+  width: 2rem;
+  margin: 0.45rem 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .container-tab .menu-tab .item-self .toptab .elementos .iconomultimedia {
+    text-align: center;
+  }
+}
+
+.main .container-tab .menu-tab .item-self .centertab {
+  width: 82%;
+  margin: -0.5rem auto;
+  display: flex;
+  align-items: center;
+}
+
+.main .container-tab .menu-tab .item-self .centertab .titletab {
+  flex-grow: 1;
+  display: flex;
+  align-items: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .main .container-tab .menu-tab .item-self .centertab .titletab {
+    justify-content: center;
+  }
+}
+
+/*=================================================================================================*/
+/*==================================================================================================*/
+.cards {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+}
+
+.cards .card {
+  cursor: pointer;
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-display: flex;
+  -webkit-flex-direction: row;
+  -ms-flex-direction: row;
+  -moz-flex-direction: row;
+  flex-direction: row;
+  -webkit-flex-basis: 30vw;
+  -ms-flex-basis: 30vw;
+  -moz-flex-basis: 30vw;
+  flex-basis: 30vw;
+  margin: 0;
+  background-size: cover;
+  background-repeat: no-repeat;
+  min-height: 260px;
+  min-width: 280px;
+}
+
+.cards .card .card-info {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  -ms-display: flex;
+  -webkit-flex-direction: column;
+  -ms-flex-direction: column;
+  -moz-flex-direction: column;
+  flex-direction: column;
+  -webkit-justify-content: center;
+  -ms-justify-content: center;
+  -moz-justify-content: center;
+  -ms-flex-pack: justify;
+  justify-content: center;
+  cursor: pointer;
+  opacity: 0;
+  background-color: rgba(0, 0, 0, 0.8);
+  margin-top: 0px;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  transition: .2s all;
+  width: 100%;
+}
+
+.cards .card:hover .card-info {
+  opacity: 1;
+}
+
+.set-bg {
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: inherit;
+  width: 100%;
+}
+
+.bg-color1 {
+  background: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(172, 83, 106, 0), rgba(172, 83, 106, 0.6));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom right, rgba(172, 83, 106, 0), rgba(172, 83, 106, 0.6));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom right, rgba(172, 83, 106, 0), rgba(172, 83, 106, 0.6));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom right, rgba(172, 83, 106, 0), rgba(172, 83, 106, 0.6));
+  /*Standard*/
+}
+
+.bg-color-2 {
+  background: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top, rgba(172, 83, 106, 0.6), rgba(172, 83, 106, 0));
+  /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom left, rgba(172, 83, 106, 0.6), rgba(172, 83, 106, 0));
+  /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom left, rgba(172, 83, 106, 0.6), rgba(172, 83, 106, 0));
+  /*Fx 3.6-15*/
+  background: linear-gradient(to bottom left, rgba(172, 83, 106, 0.6), rgba(172, 83, 106, 0));
+  /*Standard*/
+}
+
+.bg-color-3 {
+  background: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(184, 151, 202, 0.6), transparent);
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(184, 151, 202, 0.6), transparent);
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(184, 151, 202, 0.6), transparent);
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(184, 151, 202, 0.6), transparent);
+  /* Standard syntax */
+}
+
+.bg-color-4 {
+  background: transparent;
+  /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  /* For Firefox 3.6 to 15 */
+  background: linear-gradient(transparent, rgba(0, 0, 0, 0.5));
+  /* Standard syntax */
+}
+
+#video {
+  margin: 0 auto;
+  text-align: center;
+  display: block;
+  position: relative;
+  width: 65vw;
+  height: 60vh;
+  border: 12px solid rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+  padding-top: -10%;
+  border-radius: 20px;
+  z-index: 9;
+}
+
+ol {
+  /* background: rgba(255,255,255,.2);
+  margin: 1rem 0;
+  padding: 1rem 2.5rem;; */
+}
+
+ol li {
+  font-family: 'OpenSans-Light';
+  /* padding-top: 1rem;
+    color: rgba(80,80,16,0.3);
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem; */
+}
+
+ol li p {
+  color: #505010;
+  font-family: 'OpenSans-light';
+  font-size: 1.2rem;
+}
+
+.mensajegiro p {
+  display: -webkit-flex;
+  display: flex;
+  align-items: center;
+  visibility: hidden;
+  z-index: 999;
+  position: absolute;
+  margin: -34% 27%;
+  justify-content: center;
+}
+
+@media only screen and (max-width: 767px) {
+  .mensajegiro p {
+    font-weight: 600;
+    text-shadow: -1px 0px 6px #999696;
+    color: red;
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    visibility: visible;
+    z-index: 9999;
+    filter: alpha(opacity=0);
+    opacity: 9;
+    -moz-transition: all 1s ease-in-out;
+    -webkit-transition: all 1s ease-in-out;
+    -o-transition: all 1s ease-in-out;
+    transition: all 1s ease-in-out;
+    justify-content: center;
+  }
+}
+
+.hrClass {
+  border: 2px;
+  height: 2px;
+  background: #fff;
+  margin: 1vw 0;
+}
+
+.control-content .border-left-box-right-dotted {
+  padding: 0 20% 0 1em;
+  border-left: 2px dotted #fff;
+}
+
+@media only screen and (max-width: 767px) {
+  .control-content .border-left-box-right-dotted {
+    border-left: 0px;
+    padding: 0 0% 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .control-content .border-left-box-right-dotted {
+    border-left: 0px;
+    padding: 0 0% 0 0;
+  }
+}
+
+.control-content .border-left-box-left {
+  padding: 12rem 4rem 0 4rem;
+}
+
+@media only screen and (max-width: 767px) {
+  .control-content .border-left-box-left {
+    padding: 0 0 0 0;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .control-content .border-left-box-left {
+    padding: 0 0 0 0;
+  }
+}
+
+.control-object {
+  width: 80%;
+  height: auto;
+  vertical-align: top;
+  z-index: 999;
+}
+
+@media only screen and (max-width: 767px) {
+  .control-object {
+    width: 90%;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .control-object {
+    width: 90%;
+    height: auto;
+  }
+}
+
+.marginf {
+  padding-bottom: 1em;
+}
+
+.ocultarobj {
+  display: block;
+}
+
+@media only screen and (max-width: 767px) {
+  .ocultarobj {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .ocultarobj {
+    display: none;
+  }
+}
+
+.h1_stile_50v {
+  font-family: 'OpenSans-Light';
+  margin: 0 0 0.6em 0;
+}
+
+.p_centrado_ret12 {
+  margin: 0 5%;
+}
+
+.margen_izq {
+  display: block;
+  border-right: 2px solid #fff;
+  padding: 2vh 2vw 2vh 0;
+}
+
+@media only screen and (max-width: 767px) {
+  .margen_izq {
+    border-right: 0px solid #fff;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .margen_izq {
+    border-right: 0px solid #fff;
+  }
+}

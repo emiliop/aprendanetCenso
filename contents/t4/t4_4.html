@@ -1,0 +1,102 @@
+<script>
+  ocultaRetro(9);
+</script>
+
+<style>
+  .color3{
+    background-color: #4a8245;
+  }
+
+  /*Estilo fondo*/
+    .clase-bkg24 {
+   background-image: url('images/interfaz/bk_004.svg');
+   background-repeat: no-repeat;
+   background-position: center;
+   background-size: cover;
+   -webkit-background-size: cover;
+   -moz-background-size: cover;
+   -o-background-size: cover;
+   background-size: cover;
+   height: inherit;
+   width: 100%;
+ } 
+
+ /* Acordeon */
+
+ *{ font-family: sans-serif; margin: 0;}
+ dl{ margin: 30px auto; width: 65vw; }
+ dt, dd{ padding: 30px; }
+ dt{ color: white; border: 2px solid rgba(255, 255, 255, 0.5); border-top: 2px solid rgba(255, 255, 255, 0.5); cursor: pointer; }
+ dd{   display: none; line-height: 0.2em; color:#fff;}
+ dt.activo, dt:hover{ background: rgba(255, 255, 255, 0.2); }
+
+ dt:before{ content: "▸"; margin-right: 10px; }
+ dt.activo:before{ content: "▾"; }
+ 
+
+</style>
+
+<div class="container-fluid contenedor-v clase-bkg24 center-md center-lg" data-aside="false"> <!-- Lo utilizamos para centrar todos los elementos-->
+
+  <div class="row center-xs center-sm center center-md center-lg" style="border-radius: 50px; color: black;">
+   <div class="col-xs-12 col-sm-12 center-xs center-sm center-md center-lg col-md-12  col-lg-12  ">
+    <br><br>
+    <h1 style="color:white; font-family: 'OpenSans-Light'; margin:5vh auto 3vh auto; text-align: center;"><span class="xbold">3.3. </span>Alimentaci&oacute;n desde  
+el cargador de bater&iacute;íacute;a externa</h1>          
+  
+    </div> 
+
+
+  <div class="row center-xs center-sm center-md center-lg">
+   <div class="col-xs-12 col-sm-12 center-xs center-sm center-md center-lg  col-md-12 col-lg-12">
+    <dl>
+      <dt>
+        <p style="text-align:center; color:#fff;">
+          <span class="xbold">1.</span>  <span> Conecte el extremo del cable USB al puerto USB del cargador de batería externa.</span>
+        </p>
+      </dt>
+      <dd>
+        <object id="objectosvg" alt="1. Se ilustra en detalle un cable USB (puerto de conexión)." title="1. Carga - Cable USB." type="image/svg+xml" data="images/t4/t4_2c.svg" style="text-align: center;">
+          <p>Su Navegador no soporta svg</p>
+        </object> 
+      </dd>
+      <dt>
+        <p style="text-align:center; color:#fff;">
+          <span class="xbold">2.</span>  <span>Conecte el puerto micro USB (el otro extremo del cable) al DMC.</span>
+        </p>
+      </dt>
+      <dd>
+        <object id="objectosvg" alt="2. lustración batería externa del DMC" title="2. Carga - Batería externa" type="image/svg+xml" data="images/t4/t4_2d.svg" style="text-align: center;">
+          <p>Su Navegador no soporta svg</p>
+        </object> 
+        <p style="text-align:center; color:#fff; line-height: 1em;">
+        <span><br>El cargador de bater&iacute;a externa debe estar disponible en cualquier momento, ya que se convierte en la fuente de alimentaci&oacute;n del DMC cuando la bater&iacute;a interna se descarga. </span> 
+        </p>
+      </dd>
+    </dl>
+  </div>
+</div>
+
+
+
+
+</div>
+</div>
+
+
+
+<script>
+  $('dl dd').hide();
+  $('dl dt').click(function(){
+    if ($(this).hasClass('activo')) {
+      $(this).removeClass('activo');
+      $(this).next().slideUp();
+    } else {
+      $('dl dt').removeClass('activo');
+      $(this).addClass('activo');
+      $('dl dd').slideUp();
+      $(this).next().slideDown();
+    }
+  });
+</script>
+

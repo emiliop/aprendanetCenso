@@ -1,0 +1,20 @@
+/*============================================================*/
+/*Mixin Fonts All*/
+@mixin fontAll($family,$src,$weight: normal,$style: normal) {
+	@font-face {
+		font-family: $family;
+		src: url('#{$src}.eot');
+		src: local('Helvetica'),
+			 url('#{$src}.eot?#iefix') format('embedded-opentype'),
+			 url('#{$src}.woff2') format('woff2'),
+			 url('#{$src}.woff') format('woff'),
+			 url('#{$src}.ttf') format('truetype'),
+		     url('#{$src}.svg##{$family}') format('svg');
+		font-style: $style;
+		font-weight: $weight;
+	}
+}
+
+@include fontAll('OpenSans-Bold','../fonts/OpenSans/OpenSans-Bold');
+@include fontAll('OpenSans-Regular','../fonts/OpenSans/OpenSans-Regular');
+@include fontAll('OpenSans-Light','../fonts/OpenSans/OpenSans-Light');

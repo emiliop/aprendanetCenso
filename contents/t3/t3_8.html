@@ -1,0 +1,292 @@
+  <style>
+  .matrizPregunta {
+    padding: 3em;
+  }
+
+  .set-bkg0211 {
+        background-image: url('images/interfaz/bk_004.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: inherit;
+        width: 100%;
+    }
+
+
+
+
+  .retro1 {
+    min-height:30%;
+    height: auto;
+    width: 50%;
+    padding:3%;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius:15px;
+    z-index: 9999;
+  }
+
+  .retroMal1 {
+    background-color: rgba(193, 39, 39, 0.89);
+    min-height:20%;
+    height: auto;
+    width: 50%;
+    padding:3%;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 5px 5px 5px #5b1511;
+    z-index: 999;
+    
+  }
+
+  .retroBien1 {
+    background-color: rgba(118, 163, 46, 0.95);
+    min-height:20%;
+    height: auto;
+    width: 50%;
+    padding:3%;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 5px 5px 5px #38511d;
+    z-index: 999;
+    display: none;
+  }
+
+  .cierraRetro1 {
+    background: none;
+    border:none;
+    height: 50px;
+    left: 50%;
+    margin: -25px;
+    bottom: 50px;
+    width: 50px;
+    position: absolute;
+    background-image:url(images/interfaz/cierra.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+    cursor:pointer; 
+    -webkit-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    margin-top: -3.5%%;
+  }  
+
+  .cierraRetro1:hover {
+    opacity:0.4;
+  }
+
+  .matrizPregunta1 .tabla-31 div div.texto1 {
+    margin: 0px;
+  }
+
+  .matrizPregunta1 .tabla-31 div div.drop1 {
+
+  }
+
+  .matrizPregunta1 .tabla-31 div.drag {
+    border: solid 2px #00f;
+  }
+
+  .tejado1{
+    width: 325px!important;
+    height: 90px!important;
+    /*background-color: #F00;*/
+    margin: 3px;  
+  }
+
+  .tejado1.drop{
+    margin-left: -375px;
+    /*  background-color: #FF0;*/
+
+  }
+
+  .pilar1{
+    width: 325px!important;
+    height: 90px!important;
+    margin: 3px;   
+    z-index: 999;
+
+    /* background-color: #F00;*/
+
+  }
+
+  .pilar1.drop{
+    margin-left: -375px;
+    /*background-color: #FF0;*/
+  }
+
+  .retro1{
+    background-color: rgba(29, 116, 46, 0.85);
+  }
+    .retroMalc{
+    background-color: rgba(29, 116, 46, 0.85);
+  }
+</style>
+
+<div id="dialog" title="mensajes" style="display:none">
+  &nbsp;
+</div>
+<div class="container-fluid set-bkg0211 ">
+
+
+  <div class=" row  middle-xs middle-sm center-md center-lg"> 
+
+     <div class=" center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-right:4%;"><!-- Creamos una columna de 12 -->                
+      <h1 style="font-family: 'OpenSans-Light'; margin:5vh auto 3vh auto; text-align: center;">Actividad 1</h1>            
+      <p class="light" style="margin: 0 5%; ">Ordene los pasos para instalar la tarjeta micro SD en el DMC, arrastrando el icono al paso correspondiente.
+        <br><br>            
+      </p>  
+    </div>
+
+    <div class="col-xs-12 col-sm-12 col-md-3-offset col-lg-3-offset col-md-3 col-lg-3 center-md center-lg">
+
+      <div class="row fila-flex centrar-horizontal">
+
+        <div class="centrar-vertical texto1 tejado1" >
+        </div>
+        <div class="drop drop11 centrar-vertical ui-droppable1 tejado1" style="background-image:url(images/t2/t2_8a_1.svg);background-size:contain;"   data-ref="11" alt="1. Gráfica con cinco botones enumerados del 1 al 5. Cada botón simboliza los diferentes pasos a seguir en e proceso de instalación de la tarjeta Micro SD. Adicionalmente, se proveen cuadros de texto1 de arrastre que contienen la información de los pasos a seguir. El usuario debe emparejar la información con el respectivo número del paso a seguir. " title="1. Actividad - Proceso de instalación de tarjeta Micro SD">          
+        </div> 
+
+        <div class="centrar-vertical texto1 pilar1">
+        </div>        
+        <div style="background-image:url(images/t2/t2_8a_2.svg);background-size:contain;" class="drop drop12 centrar-vertical pilar1 ui-droppable1" data-ref="12">
+
+        </div>
+        
+        <div class="centrar-vertical texto1 pilar1" style="">
+        </div>
+        <div style="background-image:url(images/t2/t2_8a_3.svg);background-size:contain;" class="drop drop13 centrar-vertical ui-droppable1 pilar1" data-ref="13">
+          
+        </div>
+        <div class="centrar-vertical texto1 pilar1">
+        </div>
+        <div style="background-image:url(images/t2/t2_8a_4.svg);background-size:contain;" class="drop drop14 centrar-vertical ui-droppable1 pilar1" data-ref="14">
+          
+        </div>
+        <div class="centrar-vertical texto1 pilar1">
+        </div>
+        <div style="background-image:url(images/t2/t2_8a_5.svg);background-size:contain;" class="drop drop15 centrar-vertical ui-droppable1 pilar1" data-ref="15">
+          
+        </div>
+      </div>
+    </div>
+
+    <div class="row col-xs-12 col-sm-12  col-md-3-offset col-lg-3-offset col-md-3 col-lg-3 center-xs center-sm start-md start-lg">
+    <div class="row fila-flex centrar-horizontal">
+      <div style="position: relative;" class="drag ui-draggable ui-draggable-handle pilar1" data-ref="12">
+        <img src="images/t2/t2_8b.svg" style="width: 100%;"/>
+      </div>
+
+      <div style="position: relative;" class="drag ui-draggable ui-draggable-handle pilar1" data-ref="14">
+      <img src="images/t2/t2_8d.svg" style="width: 100%;"/>
+      </div>
+
+      <div style="position: relative;" class="drag ui-draggable ui-draggable-handle pilar1" data-ref="13">
+        <img src="images/t2/t2_8c.svg" style="width: 100%;"/>
+      </div>
+      <div style="position: relative;" class="drag ui-draggable ui-draggable-handle pilar1" data-ref="15">
+        <img src="images/t2/t2_8e.svg" style="width: 100%;"/>
+      </div>
+      <div style="position: relative;" class="drag ui-draggable ui-draggable-handle tejado1" data-ref="11">
+      <img src="images/t2/t2_8a.svg" style="width: 100%;"/>
+      </div>
+
+    </div>
+
+
+  </div>
+  </div>
+</div>
+
+
+
+<div style="opacity: 1;" id="bien1" class="retroBien1" style="background-color: rgba(232, 67, 93, 0.95);">
+  <button class="cierraRetro1" name="bien1" onclick="cierraVentana(this.name)">
+    &nbsp;
+  </button>
+  <div class="textoRetro">
+    ¡Excelente! Este es el paso que corresponde.
+  </div>
+</div>
+
+<div style="display: none;" id="mal1" class="retroMal1">
+  <button class="cierraRetro1" name="mal" onclick="cierraVentana(this.name)">
+    &nbsp;
+  </button>
+  <div class="textoRetro">
+    ¡Intente de nuevo! Este paso no va aca.
+  </div>
+</div>
+
+<div style="display: none;" id="bienFinal1" class="retroBien1">
+  <button class="cierraRetro1" name="bienFinal1" onclick="cierraVentana(this.name)">
+    &nbsp;
+  </button>
+  <div class="textoRetro">
+    ¡Excelente! Completo los pasos para instalar la tarjeta micro SD en el DMC
+  </div>
+</div>
+
+
+<script>
+  $(function() {
+
+    var html = "",
+    cinicial = 0,
+    cfinal = $("div").children(".drag").size();
+
+    $("#mal1").hide();
+    $("#bien1").hide();
+    $("#bienFinal1").hide();
+
+    $('.drag').draggable({
+      containment: ".tabla-2",
+      cursor: "move",
+      revert: "invalid",
+      zIndex: 1000
+    });
+
+    $(".drop").droppable({
+
+      accept: ".drag",
+      activeClass: "dropp",
+      drop: function(event, ui) {
+
+        $("#mal1").hide();
+        $("#bien1").hide();
+
+        if (ui.draggable.attr('data-ref') == $(this).attr('data-ref')) {
+
+          html = ui.draggable.html();
+          $(".drop" + $(this).attr('data-ref')).append(html);
+          ui.draggable.remove();
+
+          cinicial += 1;
+
+          if (cinicial < cfinal)
+            $("#bien1").fadeTo("fast", 1);
+          else
+            $("#bienFinal1").fadeTo("fast", 1);
+
+        } else {
+
+          ui.draggable.draggable("option", "revert", true);
+          $("#mal1").fadeTo("fast", 1);
+
+        }
+      }
+    });
+  })
+
+</script>

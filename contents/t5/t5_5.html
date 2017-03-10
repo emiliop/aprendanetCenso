@@ -1,0 +1,155 @@
+<style>
+  .clase-bkg69 {
+    background-image: url('images/interfaz/bk_0019.svg');
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: inherit;
+    width: 100%;
+  }
+
+  .pregunta {
+    padding: 1em;
+  }
+
+</style>
+
+<!--prueba-->
+<div class="container-fluid txtCentrado col-xs-center col-sm-center col-md-center col-lg-center clase-bkg69">
+  <div class=" row center-xs center-sm center-md center-lg">
+    <!-- Creamos una fila -->
+    <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12">
+      <!-- Creamos una columna de 12 -->
+      <h1 style="font-family: 'OpenSans-Light'; margin:5vh auto 3vh auto; text-align: center;">Actividad 3</h1>
+      <p class="light" style="text-align: center; margin: 0 5%; " class="light ">
+        Seleccione el icono correspondiente según la función que representa.<br/><br/>
+      </p>
+            <p style="visibility: hidden;">Aquí podrá activar o desactivar el testeador de GPS. Este debe activarse 20 minutos antes de la primera entrevista para evitar demoras en xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+      <div class="retroalimentacion" style="display:none;">
+
+        <div class="bien" style="display:none;">
+          <h1> ¡Muy bien! </h1>
+          <div class="row txtCentrado" style="margin:2vh 0 1vh 0">
+            <div class="col-md-4 col-lg-4">
+              
+            </div>
+
+            <div class="col-md-offset-0 col-md-2 col-lg-offset-0 col-lg-2">
+              <span style="display: -webkit-box; margin: auto; z-index:1"><img src="images/t5/t6_4b.svg" alt="Bien" style="width:4vw; height:auto; border: 2px solid #fff; border-radius:50%;"></span></div>
+
+            <div class="col-md-4 col-lg-4">
+              
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="mal" style="display:none;">
+          <h1> ¡incorrecto! </h1>
+          <div class="row txtCentrado" style="margin:2vh 0 1vh 0">
+
+            <div class="col-md-4 col-lg-4">
+              
+            </div>
+
+            <div class="col-md-offset-0 col-md-2 col-lg-offset-0 col-lg-2">
+              <span style="display: -webkit-box; margin: auto; z-index:1"><img src="images/t5/t6_4c.svg" alt="mal" style="width:4vw; height:auto; border: 2px solid #fff; border-radius:50%; margin-left:53%;"></span></div>
+
+            <div class="col-md-4 col-lg-4">
+              
+            </div>
+
+          </div>
+        </div>
+        <div style="text-align: center; margin: 0 6%; " class="cont_retro">
+        
+        </div>
+      </div>
+
+      <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12">
+        <div class="pregunta">
+          <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img src="./images/t5/cnpv.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('bien',0)">
+            <img src="./images/t5/wifi.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',1)">
+            <img src="./images/t5/gps.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',2)">
+            <img src="./images/t5/linterna.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',3)">
+            <img src="./images/t5/camara.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',4)">
+            <img src="./images/t5/calculadora.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',5)">
+            <img src="./images/t5/calendario.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',6)">
+          </div>
+          <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: solid 2px #FFF;">
+            a. Permite la entrada al cuestionario del CNPV, previo registro
+          </div>
+        </div>
+
+        <div class="pregunta">
+          <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img src="./images/t5/cnpv.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',0)">
+            <img src="./images/t5/wifi.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('bien',1)">
+            <img src="./images/t5/gps.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',2)">
+            <img src="./images/t5/linterna.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',3)">
+            <img src="./images/t5/camara.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',4)">
+            <img src="./images/t5/calculadora.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',5)">
+            <img src="./images/t5/calendario.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',6)">
+          </div>
+          <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: solid 2px #FFF;">
+            b. Permite activar o desactivar el wifi del DMC
+          </div>
+        </div>
+
+        <div class="pregunta">
+          <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12">
+            <img src="./images/t5/cnpv.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',0)">
+            <img src="./images/t5/wifi.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',1)">
+            <img src="./images/t5/gps.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('bien',2)">
+            <img src="./images/t5/linterna.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',3)">
+            <img src="./images/t5/camara.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',4)">
+            <img src="./images/t5/calculadora.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',5)">
+            <img src="./images/t5/calendario.png" style="cursor:pointer; padding:5px;" onclick="seleccionar('mal',6)">
+          </div>
+          <div class="center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12" style="border: solid 2px #FFF;">
+            c. Permite sincronizar y activar el testeador del GPS.
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+    </div>
+    <!-- Dos Columnas -->
+
+  </div>
+
+</div>
+<!-- Fin prueba -->
+<script>
+  seleccionar = function(bm, retro) {
+    var retros = [
+      "<img src='./images/t5/cnpv.png'> Aquí encontrará el cuestionario para el censo. Recuerde utilizar su usuario y contraseña.",
+      "<img src='./images/t5/wifi.png'> Aquí podrá activar y desactivar el wifi del DMC.",
+      "<img src='./images/t5/gps.png'> Aquí podrá activar o desactivar el testeador de GPS. Este debe activarse 20 minutos antes de la primera entrevista para evitar demoras en las entrevistas.",
+      "<img src='./images/t5/linterna.png'> Aquí podrá activar o desactivar la linterna del DMC.",
+      "<img src='./images/t5/camara.png'> Con este icono podrá activar la cámara.",
+      "<img src='./images/t5/calculadora.png'> Con este icono podrás activar la calculadora para realizar las operaciones que requiera.",
+      "<img src='./images/t5/calendario.png'> Con este icono podrá organizar su agenda de trabajo."
+    ];
+    $(".cont_retro").html(retros[retro]);
+    console.log(bm);
+    if (bm == 'bien') {
+      $(".mal").hide();
+      $(".bien").show();
+    }  else {
+      $(".bien").hide();
+      $(".mal").show();
+    };
+    $(".retroalimentacion").show();
+  }
+
+</script>

@@ -1,0 +1,31 @@
+{
+  "name": "propuesta",
+  "version": "1.0.0",
+  "description": "Plantilla DANE Censo Nacional de Población y Vivienda - CNPV 2016",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "Html5",
+    "jQuery.js",
+    "Gulp",
+    "Sass"
+  ],
+  "author": "Ivan Orlando Lamprea Guerrero",
+  "license": "MIT",
+  "scripts":{
+    "start":"gulp"
+  },
+  "devDependencies": {
+    "browser-sync": "^2.14.0",
+    "es6-promise": "^3.1.2",
+    "gulp": "^3.9.1",
+    "gulp-file": "^0.3.0",
+    "gulp-sass": "^2.3.2",
+    "gulp-util": "^3.0.7",
+    "recursive-readdir": "^2.1.0",
+    "through2": "^2.0.1"
+  },
+  "dependencies": {}
+}

@@ -1,0 +1,405 @@
+<style>
+  .matrizPregunta {
+    padding: 3em;
+  }
+
+    .set-bkgs45 {
+        background-image: url('images/interfaz/bk_005.svg');
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+        -webkit-background-size: cover;
+        -moz-background-size: cover;
+        -o-background-size: cover;
+        background-size: cover;
+        height: inherit;
+        width: 100%;
+    }
+
+
+
+  .retro {
+    min-height:30%;
+    height: auto;
+    width: 50%;
+    padding:3%;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 5px 5px 5px rgba(0,0,0,0.3);
+    border-radius:15px;
+    z-index: 9999;
+  }
+
+  .retroMal {
+    background-color: rgba(193, 39, 39, 0.89);
+    min-height:20%;
+    height: auto;
+    width: 50%;
+    padding:3%;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 5px 5px 5px #5b1511;
+    z-index: 999;
+    
+  }
+
+  .retroBien {
+    background-color: rgba(118, 163, 46, 0.95);
+    min-height:20%;
+    height: auto;
+    width: 50%;
+    padding:3%;
+    position: fixed;
+    top: 50%; 
+    left: 50%;
+    transform: translate(-50%, -40%);
+    box-shadow: 5px 5px 5px #38511d;
+    z-index: 999;
+    display: none;
+  }
+
+  .cierraRetro {
+    background: none;
+    border:none;
+    height: 50px;
+    left: 50%;
+    margin: -25px;
+    bottom: 50px;
+    width: 50px;
+    position: absolute;
+    background-image:url(images/interfaz/cierra.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+    cursor:pointer; 
+    -webkit-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+    margin-top: -3.5%%;
+  }  
+
+  .cierraRetro:hover {
+    opacity:0.4;
+  }
+
+  .matrizPregunta .tabla-3 div div.texto {
+    margin: 0px;
+  }
+
+  .matrizPregunta .tabla-3 div div.drop {
+
+  }
+
+  .matrizPregunta .tabla-3 div.drag {
+    border: solid 2px #00f;
+  }
+
+  .tejado{
+color: white; border: 0px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; padding:1.5em; width: 100%;
+    /*background-color: #F00;*/
+    margin: 3px;  
+  }
+
+  .tejado.drop{
+    margin-top: -67px;
+    /*  background-color: #FF0;*/
+
+  }
+
+  .pilar{
+    width: 325px!important;
+    height: 90px!important;
+    margin: 3px;   
+    z-index: 999;
+
+    /* background-color: #F00;*/
+
+  }
+
+ .pilarint{
+color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.9em 0; padding: 0.5em; widows: 11px;em; 
+
+    /* background-color: #F00;*/
+
+  }
+
+
+  .pilar.drop{
+    margin-left: -375px;
+    /*background-color: #FF0;*/
+  }
+
+  .retro{
+    background-color: rgba(29, 116, 46, 0.85);
+  }
+    .retroMalc{
+    background-color: rgba(29, 116, 46, 0.85);
+  }
+</style>
+
+<div id="dialog" title="mensajes" style="display:none">
+  &nbsp;
+</div>
+<div class="container-fluid set-bkgs45 ">
+
+
+  <div class=" row  middle-xs middle-sm top-md top-lg center-md center-lg"> 
+
+     <div class=" center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-12 col-lg-12" style="padding-right:4%; " alt="1. Cuadrícula para el arrastre de los diferentes pasos a seguir para cargar el DMC, de acuerdo a cada método específico de carga. Corriente eléctrica, computador, batería" title="1. Actividad - Métodos de carga para el dispositivo DMC. "><!-- Creamos una columna de 12 -->                
+      <h1 style="font-family: 'OpenSans-Light'; margin:5vh auto 3vh auto; text-align: center;"><span class="xbold"> </span>Actividad 2</h1>            
+      <p class="light" style="margin: 0 5%;">Organice los pasos para cargar el DMC, por medio de corriente directa, computador y bater&iacute;a externa.
+        <br><br>        
+        <p style="text-align: center;" class="bold">Seleccione las tarjetas de la parte inferior y arrastrelas a los celdas de la tabla según corresponda</p>    
+        <br><br>             
+      </p>  
+    </div>
+<!-- Caja superior izquierda 2 Col-->
+    <div class=" center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-2 col-lg-2" style="margin-right: 10px;" ><!-- Creamos una columna de 12 --> 
+    <div class="row top-md top-lg " style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); padding:0.2em;">
+      <p class="center-md center-lg" style="text-align: center;">Paso</p>      
+    </div>
+
+    <!-- Numeración interna 1-->
+    <div class="row top-md top-lg" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; padding:1.6em;">
+    <p class="center-md center-lg light"  style="text-align: center; font-size: 2em;">1</p>      
+    </div>
+        <!-- Numeración interna 2-->
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; padding:1.6em;">
+    <p class="center-md center-lg light"  style="text-align: center; font-size: 2em;">2</p>      
+    </div>
+        <!-- Numeración interna 3-->
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; padding:1.6em;">
+    <p class="center-md center-lg light"  style="text-align: center; font-size: 2em;">3</p>      
+    </div>
+
+    </div>
+    <!-- Fin superior izquierda-->
+
+<!-- Caja superior derecha 9 Col-->
+    <div class=" center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-9 col-lg-9" ><!-- Creamos una columna de 12 --> 
+    <div class="row top-md top-lg" style="color: white; border: 0px solid rgba(255, 255, 255, 0.5); padding:0em;">
+    <!-- Caja 1 Izq-->
+     <div class=" center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-3 col-lg-3"><!-- Creamos una columna de 3 --> 
+    <div class="row top-md top-lg" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); padding:0.2em;">
+      <p class="center-md center-lg" style="text-align: center;">Corriente Directa </p>
+    </div>
+    <!-- Columna 2 Fila 2 col-3 --> 
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; height: 8.8vw;">
+      <div class="texto tejado" >
+        </div>
+        <div class="drop drop1  ui-droppable tejado" data-ref="1">         
+        </div>
+    </div>
+        <!-- Columna 2 Fila 3 col-3 --> 
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; height: 8.8vw;">
+      <div class="texto tejado" >
+        </div>
+        <div class="drop drop2  ui-droppable tejado" data-ref="2">         
+        </div>
+    </div>
+            <!-- Columna 2 Fila 3 col-4 --> 
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; height: 8.8vw">
+      <div class="texto tejado" >
+        </div>
+        <div class="drop drop3  ui-droppable tejado" data-ref="3">         
+        </div>
+    </div>
+
+
+    </div>
+     <!-- Fin 1 Izq--> 
+
+        <!-- Caja 2 cent-->
+     <div class=" center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-3 col-lg-3"><!-- Creamos una columna de 3 --> 
+    <div class="row top-md top-lg" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); padding:0.2em;">
+      <p class="center-md center-lg" style="text-align: center;">Computador</p>
+    </div>
+<!-- Columna 3 Fila 2 col-3 --> 
+<div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; height: 8.8vw;">
+      <div class="texto tejado" >
+        </div>
+        <div class="drop drop4  ui-droppable tejado" data-ref="4">         
+        </div>
+    </div>
+        <!-- Columna 3 Fila 3 col-3 --> 
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; height: 8.8vw;">
+       <div class="texto tejado" >
+        </div>
+        <div class="drop drop5  ui-droppable tejado" data-ref="5">         
+        </div>
+    </div>
+            <!-- Columna 3 Fila 3 col-4 --> 
+
+
+    </div>
+     <!-- Fin 2 Cent--> 
+        <!-- Caja 3 der-->
+     <div class=" center-xs center-sm center-md center-lg col-xs-12 col-sm-12 col-md-3 col-lg-3" ><!-- Creamos una columna de 3 --> 
+    <div class="row top-md top-lg" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); padding:0.2em;">
+      <p class="center-md center-lg" style="text-align: center;">Bater&iacute;a Externa</p>
+    </div>
+<!-- Columna 4 Fila 2 col-3 --> 
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; height: 8.8vw;">
+        <div class="texto tejado" >
+        </div>
+        <div class="drop drop6  ui-droppable tejado" data-ref="6">         
+        </div>
+
+
+        
+    </div>
+        <!-- Columna 4 Fila 3 col-3 --> 
+    <div class="row" style="color: white; border: 2px solid rgba(255, 255, 255, 0.5); margin: 0.3em 0; height: 8.8vw;">
+      <div class="texto tejado" >
+        </div>
+        <div class="drop drop7  ui-droppable tejado" data-ref="7">         
+        </div>
+    </div>
+            <!-- Columna 4 Fila 3 col-4 --> 
+
+
+
+    </div>
+     <!-- Fin 3 der--> 
+
+    </div>
+    </div>
+
+
+    <div class="col-xs-12 col-sm-12 col-md-3-offset col-lg-3-offset col-md-3 col-lg-3 center-md center-lg">
+
+      <div class="row fila-flex centrar-horizontal">
+
+
+      </div>
+    </div>
+
+    <div class="row col-xs-12 col-sm-12    col-md-9 col-offset-md-3 col-offset-lg-3 col-lg-9 center-xs center-sm start-md start-lg">
+    <div class="row fila-flex centrar-horizontal">
+      <div style="position: relative; margin-right:3px; width: 15vw; height: auto;" class="drag ui-draggable ui-draggable-handle pilarint" data-ref="2">
+    <!--   <img src="images/t2/t2_8a.svg" style="width: 100%;"/> -->
+    <p class="light" style="font-size:0.7em;"> <br>Lleve el conector a la toma el&eacute;ctrica.<br> <br></p>
+
+      </div>
+<div style="position: relative; margin-right:3px; width: 15vw; height: auto;" class="drag ui-draggable ui-draggable-handle pilarint" data-ref="4">
+    <!--   <img src="images/t2/t2_8a.svg" style="width: 100%;"/> -->
+    <p class="light" style="font-size:0.7em;"><br>Conecte el extremo del cable USB al puerto USB del computador.<br><br></p>
+      </div>
+
+    <div style="position: relative; margin-right:3px; width: 15vw; height: auto;" class="drag ui-draggable ui-draggable-handle pilarint" data-ref="6">
+    <!--   <img src="images/t2/t2_8a.svg" style="width: 100%;"/> -->
+    <p class="light" style="font-size:0.7em;"><br>Conecte el extremo del cable USB al puerto USB del cargador de bater&iacute;a externa.<br><br></p>
+      </div>
+
+
+
+      <div style="position: relative; margin-right:3px; width: 15vw; height: auto;" class="drag ui-draggable ui-draggable-handle pilarint" data-ref="3">
+    <!--   <img src="images/t2/t2_8a.svg" style="width: 100%;"/> -->
+    <p class="light" style="font-size:0.7em;"><br>Conecte el puerto micro USB (el otro extremo del cable) al DMC.<br><br></p>
+      </div>
+      <div style="position: relative; margin-right:3px; width: 15vw; height: auto;" class="drag ui-draggable ui-draggable-handle pilarint" data-ref="5">
+    <!--   <img src="images/t2/t2_8a.svg" style="width: 100%;"/> -->
+    <p class="light" style="font-size:0.7em;"><br>Conecte el puerto micro USB (el otro extremo del cable) al DMC.<br><br></p>
+      </div>
+
+    <div style="position: relative; margin-right:3px; width: 15vw; height: auto;" class="drag ui-draggable ui-draggable-handle pilarint" data-ref="7">
+    <!--   <img src="images/t2/t2_8a.svg" style="width: 100%;"/> -->
+    <p class="light" style="font-size:0.7em;"><br>Conecte el puerto micro USB (el otro extremo del cable) al DMC.<br><br></p>
+      </div>
+
+      <div style="position: relative; margin-right:3px; width: 15vw; height: auto;" class="drag ui-draggable ui-draggable-handle pilarint" data-ref="1">
+    <!--   <img src="images/t2/t2_8a.svg" style="width: 100%;"/> -->
+    <p class="light" style="font-size:0.7em;"> <br>Conecte el puerto micro USB (el otro extremo del cable) al DMC<br><br>  </p>
+      </div>
+
+    </div>
+
+
+  </div>
+  </div>
+</div>
+
+
+
+<div style="opacity: 1;" id="bien" class="retroBien" style="background-color: rgba(232, 67, 93, 0.95);">
+  <button class="cierraRetro" name="bien" onclick="cierraVentana(this.name)">
+    &nbsp;
+  </button>
+  <div class="textoRetro">
+    ¡Muy bien!
+  </div>
+</div>
+
+<div style="display: none;" id="mal" class="retroMal">
+  <button class="cierraRetro" name="mal" onclick="cierraVentana(this.name)">
+    &nbsp;
+  </button>
+  <div class="textoRetro">
+    ¡Incorrecto! 
+  </div>
+</div>
+
+<div style="display: none;" id="bienFinal" class="retroBien">
+  <button class="cierraRetro" name="bienFinal" onclick="cierraVentana(this.name)">
+    &nbsp;
+  </button>
+  <div class="textoRetro">
+    Ha finalizado satisfactoriamente la actividad, continuemos revisando los contenidos del módulo.
+  </div>
+</div>
+
+
+<script>
+  $(function() {
+
+    var html = "",
+    cinicial = 0,
+    cfinal = $("div").children(".drag").size();
+
+    $("#mal").hide();
+    $("#bien").hide();
+    $("#bienFinal").hide();
+
+    $('.drag').draggable({
+      containment: ".tabla-2",
+      cursor: "move",
+      revert: "invalid",
+      zIndex: 1000
+    });
+
+    $(".drop").droppable({
+
+      accept: ".drag",
+      activeClass: "dropp",
+      drop: function(event, ui) {
+
+        $("#mal").hide();
+        $("#bien").hide();
+
+        if (ui.draggable.attr('data-ref') == $(this).attr('data-ref')) {
+
+          html = ui.draggable.html();
+          $(".drop" + $(this).attr('data-ref')).append(html);
+          ui.draggable.remove();
+
+          cinicial += 1;
+
+          if (cinicial < cfinal)
+            $("#bien").fadeTo("fast", 1);
+          else
+            $("#bienFinal").fadeTo("fast", 1);
+
+        } else {
+
+          ui.draggable.draggable("option", "revert", true);
+          $("#mal").fadeTo("fast", 1);
+
+        }
+      }
+    });
+  })
+
+</script>

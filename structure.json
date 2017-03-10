@@ -1,0 +1,60 @@
+{
+  "slides": [1,1,1,8,5,5,4,3,2],
+  "title": "Dispositivo Móvil de Captura (DMC)",
+  "thems": ["Presentación","Tabla de contenido","Objetivos de aprendizaje","Conociendo al DMC ","Carga del DMC", "Manejo del DMC", "Cuidados del DMC y batería", "Cierre"],
+  "subthems": {
+    "0": ["Portada"],
+    "1": ["Objetivos de aprendizaje"],
+    "2": ["Inicio"],
+    "3": ["Inicio","¿Qué es el DMC?","Características del DMC", "Características técnicas del DMC", "Partes y componentes","Instalación de la micro SD","Pantalla del DMC","Actividad"],
+    "4": ["Inicio","Corriente directa","A través del compuador","Batería externa","Actividad"],
+    "5": ["Inicio","Encendido y apagado del DMC","Uso de la pantalla táctil y el lápiz táctil","Aplicaciones del DMC","Actividad"], 
+    "6": ["Inicio","Cuidados del DMC","Cuidados de la batería y cargador","Actividad"],
+    "7": ["Inicio","Cierre","Creditos"]   
+  },
+  "contenidosMultimedia": {
+    "2": {
+          "1": ["Imagen"]
+         },
+    "3": {
+          "1": ["Imagen"],
+          "2": ["Imagen"],
+          "3": ["Imagen"],
+          "4": ["Imagen"],
+          "5": ["Infografia"],
+          "6": ["Imagen"],
+          "7": ["Actividad"]
+         },
+    "4": {
+          "1": ["Infografia"],
+          "2": ["Infografia"],
+          "3": ["Infografia"],
+          "4": ["Actividad"]
+        },
+    "5": {
+          "1": ["Imagen"],
+          "2": ["Infografia"],
+          "3": ["Imagen"],
+          "4": ["Actividad"] 
+
+        },
+    "6": {
+          "1": ["Infografia"],
+          "2": ["Infografia"],
+          "3": ["Actividad"]   
+
+        },
+    "7": {
+          "1": ["Imagen"],
+          "2": ["Credito"]     
+        }
+  },
+
+  "prefabs": [
+    ["portada"],
+    ["tabla_contenido"],
+    ["tabla_sub"]
+  ],
+  "addSlides": { "directory":"t2", "newSlide": "3", "prefab": "" },
+  "removeSlides":{ "directory": "t2", "remSlide": "1" }
+}

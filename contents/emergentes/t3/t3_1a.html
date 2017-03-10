@@ -1,0 +1,51 @@
+
+<style type="text/css">  
+.cierraModal {
+    background: none;
+    border:none;
+    height: 50px;
+    width: 50px;
+    margin: 10px auto;
+    background-image:url(images/interfaz/cierra.svg);
+    background-position:center;
+    background-repeat:no-repeat;
+    cursor:pointer;
+    z-index: 10000;    
+    -webkit-transition:all 0.3s ease;
+    -o-transition:all 0.3s ease;
+    transition:all 0.3s ease;
+}
+
+</style>
+<div class="franjaModal">
+    <div class="btn_close cierraModal icon-cancel-circle" id="close">&nbsp;</div>
+</div>
+
+<div class="container-fluid"> <!-- Lo utilizamos para centrar todos los elementos-->
+        <div class="row start bottom"> <!-- la fila correspondiente para organzar todo -->
+            <!-- Imagen que abarca 3 columnas-->
+            <div id="contenido thumb col-0">
+            <!-- ASIDE-->
+            </div>
+            <div  class=" col-12  center">            
+                <div class="row start contenerdor-lr-texto"><h3 style="color:#E38E2B"> Accesorios cargador de batería externa<br><br></h3>  <p>Al momento de recibir el DMC, se le entregarán dos cajas que contendrán el dispositivo y los elementos necesarios para su buen funcionamiento.<br><br><br> <br><br>  </p></div>
+                <div class="thumb row center hvr-grow-rotate animated slideInDown" >
+                    <object id="svgobjeto" type="image/svg+xml"  data="images/t3/t3_1z.svg">
+                        <p>Su Nave  gador no soporta svg</p>
+                    </object>   
+
+                </div>
+            </div>
+        </div>
+    </div>    
+
+<script>
+    $("#close").click(function () {
+        cerrar();
+    });
+
+    $('label').click(function () {
+        $('label').removeClass('pgActual colBase');
+        $(this).addClass('pgActual colBase');
+    });
+</script>

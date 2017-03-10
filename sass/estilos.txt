@@ -1,0 +1,30 @@
+$roles: ('th-CoorDepartamental' #E2007A,'th-LidMunicipal' #007A95,'th-EnlMunicipal' #2E8E9E,'th-CoorLocalidad' #B5105F,'th-Operativo' #2BABE3,'th-Informatico' #94A822,'th-Administrativo' #98BD1E,'th-Supervisor' #F19B00,'th-Censista' #B6004B);
+$totalItems: 10;
+@each $role in $roles {
+  $index: index($roles, $role);
+  .#{nth($role, 1)}
+  {
+    .principalTrans { background-color: nth($role, 2); }
+    .noColor {color:rgba(0,0,0,0) !important; }
+    .blanco { color: rgb(255,255,255) !important; }
+    .colorBase { background-color: nth($role, 2) !important; }
+    .imgRol { background-image: url("../images/t0/#{$index}_rol.png") !important;}
+    .colBase{ color: nth($role, 2) !important;}
+    @for $i from 0 through $totalItems
+    {
+      .color#{$i}{background-color:nth($role,2)/(1+($i/10));}
+      .col#{$i}{color:nth($role,2)/(1+($i/10));}
+    }
+    #left_ln, #right_ln {
+      cursor: pointer;
+      background-image: url("../images/interfaz/flechaNav#{$index}.svg");
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      height: 80px;
+      transition: all 0.3s ease 0s;
+      width: 30px;
+      z-index: 999;
+    }
+  }
+}

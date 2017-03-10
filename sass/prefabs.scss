@@ -1,0 +1,418 @@
+@import 'mixin/_flex.scss';
+@import 'mixin/_animation.scss';
+@import 'mixin/_mediaqueries.scss';
+
+/*=================================================================================================*/
+// Portada
+/*=================================================================================================*/
+
+#portada1
+{
+  @include m-flex(column);
+  @include m_align-items(center);
+  @include m_justify-content(center);
+  h1{
+    text-align: center;
+    padding-top:1rem; //aca controlamos la altura del titulo de portada
+    font-size:4em;
+    font-weight: 900;
+    color:#fff !important;
+  }
+  h3{
+    margin: 0 auto;
+    text-align: center;
+    color:#fff !important;
+  }
+  img {
+    width:40vmax;
+    margin: 1.5rem auto;
+  }
+  div {
+    padding: 1em;
+    width: auto;
+    height: auto;
+    border: 2px solid #fff;
+    border-radius:10px;
+    p {
+      font-size: 1.1em;
+      text-align: center;
+      color:#fff !important;
+    }
+  }
+}
+
+/*=================================================================================================*/
+// Indice 1
+/*=================================================================================================*/
+
+
+
+////main control de tabla
+.main{
+  height: inherit;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#fff;
+  h1{
+    color:rgba(255,255,255,.5);
+    text-align: center;
+  }
+
+  h2{
+    margin: 1rem auto;
+    text-align: center;
+    color:#fff !important;
+  }
+
+  .container-tab{
+    position: relative;
+    width: 90%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    flex: 1;
+    align-self: center;
+    @include respond-to(xs) {
+      width: 100%;
+      text-align: center;
+    };
+
+    .menu-tab{
+      list-style: none;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
+      align-items: center;
+      height:auto;
+
+      .item-self{
+        @include m_flex-basis(33%);
+        border: 2px solid rgba(255, 255, 255, 0.3);
+        height: 10rem;
+        cursor: pointer;
+        @include respond-to(xs) { @include m_flex-basis(100%); height: 8rem; };
+        @include respond-to(sm) { @include m_flex-basis(100%);height: 11rem;};
+        &:hover{background-color: rgba(255,255,255,0.1) !important;}
+        &.visto{background-color: rgba(255,255,255,0.1) !important;}
+
+        .toptab{
+          display: flex;
+          width: 100%;
+          position: relative;
+          padding-top: 1em; //Distancia de la tabla de contenido a los iconos
+          -webkit-flex-wrap: wrap;
+          flex-wrap: wrap;
+
+          @include respond-to(xs) {
+            justify-content:center; // centrar cambio a pantalla équeña
+            padding-top: 1.2em;
+          };
+
+          .letter {
+            font-family: "OpenSans-Bold";
+            font-size: 2.5rem;
+            font-weight: 800;
+            margin: 0 0.5rem 0 1rem;
+            color: rgba(255, 255, 255, 0.61);
+            display: inline-block;
+            text-align: center;
+          }
+          .elementos{
+            display:flex;
+            .iconomultimedia{
+              color: #fff;
+              font-size: 1.5rem;
+              font-weight: 600;
+              flex-basis: 2rem;
+              width: 2rem;
+              margin: 0.45rem 0;
+              @include respond-to(xs) {text-align: center;}
+            }
+          }
+        }
+
+        .centertab {
+          width: 82%;
+          margin: -0.5rem auto;
+          display:flex;
+          align-items: center;
+          .titletab{
+            flex-grow: 1;
+            display:flex;
+            align-items: center;
+            @include respond-to(xs) {justify-content:center;}
+          }
+        }
+      }
+    }
+  }
+}
+
+
+
+/*=================================================================================================*/
+//cards-1
+/*==================================================================================================*/
+.cards{
+  @include m_flex(column);
+  .card{
+    cursor: pointer;
+    @include m_flex(row);
+    @include m_flex-basis(30vw);
+    margin: 0;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 260px;
+    min-width: 280px;
+    .card-info{
+      @include m_flex(column);
+      @include m_justify-content(center);
+      cursor: pointer;
+      opacity: 0;
+      background-color: rgba(0,0,0,0.8);
+      margin-top: 0px;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-size: cover;
+      transition: .2s all;
+      width: 100%;
+    }
+    &:hover{
+      .card-info{ opacity: 1; }
+    }
+  }
+}
+
+
+
+.set-bg{
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+  height: inherit;
+  width: 100%;
+}
+
+.bg-color1{
+  background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top,rgba(172,83,106,0),rgba(172,83,106,0.6)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom right,rgba(172,83,106,0),rgba(172,83,106,0.6)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom right,rgba(172,83,106,0),rgba(172,83,106,0.6)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom right, rgba(172,83,106,0), rgba(172,83,106,0.6)); /*Standard*/
+}
+.bg-color-2{
+  background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(left top,rgba(172,83,106,0.6),rgba(172,83,106,0)); /*Safari 5.1-6*/
+  background: -o-linear-gradient(bottom left,rgba(172,83,106,0.6),rgba(172,83,106,0)); /*Opera 11.1-12*/
+  background: -moz-linear-gradient(bottom left,rgba(172,83,106,0.6),rgba(172,83,106,0)); /*Fx 3.6-15*/
+  background: linear-gradient(to bottom left, rgba(172,83,106,0.6), rgba(172,83,106,0)); /*Standard*/
+}
+
+.bg-color-3{
+  background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(184,151,202,0.6),rgba(0,0,0,0)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(184,151,202,0.6),rgba(0,0,0,0)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(184,151,202,0.6),rgba(0,0,0,0)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(184,151,202,0.6),rgba(0,0,0,0)); /* Standard syntax */
+}
+
+.bg-color-4{
+  background: rgba(0,0,0,0); /* For browsers that do not support gradients */
+  background: -webkit-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)); /* For Safari 5.1 to 6.0 */
+  background: -o-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)); /* For Opera 11.1 to 12.0 */
+  background: -moz-linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)); /* For Firefox 3.6 to 15 */
+  background: linear-gradient(rgba(0,0,0,0),rgba(0,0,0,0.5)); /* Standard syntax */
+}
+
+
+#video{
+  margin:0 auto;
+  text-align:center;
+  display:block;
+  position:relative;
+  width: 65vw;
+  height: 60vh;
+  border: 12px solid rgba(0, 0, 0, 0.3);
+  display:flex;
+  align-items: center;
+  padding-top: -10%;
+  border-radius: 20px;
+  z-index: 9;
+
+}
+
+ol{
+  /* background: rgba(255,255,255,.2);
+  margin: 1rem 0;
+  padding: 1rem 2.5rem;; */
+
+
+  li{
+    font-family: 'OpenSans-Light';
+    /* padding-top: 1rem;
+    color: rgba(80,80,16,0.3);
+    font-family: 'OpenSans-Bold';
+    font-size: 1.5rem; */
+    p{
+    color: #505010;
+      font-family: 'OpenSans-light';
+      font-size: 1.2rem;
+      li
+    }
+  }
+}
+
+.mensajegiro{
+  p{
+    display: -webkit-flex;
+    display: flex;
+    align-items: center;
+    visibility:hidden;
+    z-index: 999;
+    position: absolute;
+    margin: -34% 27%;
+    justify-content:center; // centrar cambio a pantalla équeña
+
+
+
+    @include respond-to(xs) {
+      font-weight: 600;
+      text-shadow: -1px 0px 6px rgba(153, 150, 150, 1);
+      color:red;
+      display: -webkit-flex;
+      display: flex;
+      align-items: center;
+      visibility: visible; //collapse
+      z-index: 9999;
+      filter:alpha(opacity=0);
+      opacity:9;
+      -moz-transition: all 1s ease-in-out;
+      -webkit-transition: all 1s ease-in-out;
+      -o-transition: all 1s ease-in-out;
+      transition: all 1s ease-in-out;
+      justify-content:center; // centrar cambio a pantalla équeña
+
+
+    };
+  }
+}
+
+//control de hr
+.hrClass {
+  border: 2px;
+  height: 2px;
+  background: #fff;
+  margin: 1vw 0;
+   @include respond-to(xs) {
+  border: 0px;
+  height: 0px;
+  background: #fff;
+  margin: 0vw 0;
+    };
+    @include respond-to(sm) {
+  border: 0px;
+  height: 0px;
+  background: #fff;
+  margin: 0vw 0;
+    };
+}
+
+//Control de linea izq en parrafos de prefabs
+.control-content{
+  .border-left-box-right-dotted{
+    padding:0 20% 0 1em;
+    border-left:2px dotted #fff;
+    @include respond-to(xs) {
+      border-left:0px;
+      padding:0 0% 0 0;
+    };
+    @include respond-to(sm) {
+      border-left:0px;
+      padding:0 0% 0 0;
+    };
+  }
+}
+
+.control-content{
+  .border-left-box-left{
+    padding: 12rem 4rem 0 4rem;
+
+    @include respond-to(xs) {
+      padding:0 0 0 0;
+    };
+    @include respond-to(sm) {
+      padding:0 0 0 0;
+    };
+  }
+}
+
+//vamos a controlar el objeto object
+
+  .control-object {
+    width:80%;
+    height: auto;
+    vertical-align: top;
+    z-index: 999;
+  @include respond-to(xs) {
+    width:90%;
+    height: auto;
+  };
+  @include respond-to(sm) {
+    width:90%;
+    height: auto;
+  };
+
+  }
+
+
+//estilos prefabs
+
+.marginf{
+  padding-bottom: 1em;
+}
+
+//Oculta cualquier Objeto
+.ocultarobj{
+  display: block;
+  @include respond-to(xs) {
+    display: none;
+  };
+  @include respond-to(sm) {
+    display: none;
+  };
+}
+
+
+//estilo de h1 en todo
+.h1_stile_50v{
+font-family: 'OpenSans-Light';
+ margin:0 0 0.6em 0;
+}
+
+
+//estilo de p en parrafo superior centador reticula de 12
+
+.p_centrado_ret12{
+  margin: 0 5%;
+}
+
+// Margen icono 1  portada con ocultamiento
+
+.margen_izq{
+display: block;
+border-right:2px solid #fff; 
+padding:2vh 2vw 2vh 0;
+
+  @include respond-to(xs) {
+    border-right:0px solid #fff; 
+  };
+  @include respond-to(sm) {
+    border-right:0px solid #fff; 
+  };
+}
+

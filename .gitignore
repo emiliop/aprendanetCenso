@@ -1,0 +1,10 @@
+#Ignorar Directorios
+node_modules/
+.idea/
+dist/<
+!prefabs/images
+#Ignorar Ficheros
+*.xsd
+*.xml
+*.pdf
+*.docx

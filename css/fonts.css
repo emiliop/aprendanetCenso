@@ -1,0 +1,211 @@
+/*============================================================*/
+/*Mixin Fonts All*/
+@font-face {
+  font-family: "OpenSans-Bold";
+  src: url("../fonts/OpenSans/OpenSans-Bold.eot");
+  src: local("Helvetica"), url("../fonts/OpenSans/OpenSans-Bold.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Bold.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Bold.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Bold.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Bold.svg#OpenSans-Bold") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Regular";
+  src: url("../fonts/OpenSans/OpenSans-Regular.eot");
+  src: local("Helvetica"), url("../fonts/OpenSans/OpenSans-Regular.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Regular.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Regular.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Regular.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Regular.svg#OpenSans-Regular") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@font-face {
+  font-family: "OpenSans-Light";
+  src: url("../fonts/OpenSans/OpenSans-Light.eot");
+  src: local("Helvetica"), url("../fonts/OpenSans/OpenSans-Light.eot?#iefix") format("embedded-opentype"), url("../fonts/OpenSans/OpenSans-Light.woff2") format("woff2"), url("../fonts/OpenSans/OpenSans-Light.woff") format("woff"), url("../fonts/OpenSans/OpenSans-Light.ttf") format("truetype"), url("../fonts/OpenSans/OpenSans-Light.svg#OpenSans-Light") format("svg");
+  font-style: normal;
+  font-weight: normal;
+}
+
+@media only screen and (max-width: 767px) {
+  html {
+    font-size: 0.8em;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  html {
+    font-size: 0.9em;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  html {
+    font-size: 1.0em;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  html {
+    font-size: 1.2em;
+  }
+}
+
+html body {
+  font-family: 'OpenSans-Light';
+}
+
+html body h1 {
+  font-weight: 300;
+  font-size: 2.5rem;
+  font-family: 'OpenSans-Bold';
+  margin: 0;
+  padding: 0;
+}
+
+html body h2 {
+  font-weight: 400;
+  font-size: 1.8rem;
+  line-height: 1.8rem;
+  margin: 0;
+  padding: 0;
+}
+
+html body h3 {
+  font-weight: 300;
+  font-size: 1.7rem;
+  line-height: 1.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+html body h4 {
+  font-weight: 300;
+  font-size: 1.6rem;
+  line-height: 1.4rem;
+  margin: 0;
+  padding: 0;
+}
+
+html body h5 {
+  font-weight: 600;
+  font-size: 1.5rem;
+  line-height: 1.5rem;
+  font-style: italic;
+  margin: 0;
+  padding: 0;
+}
+
+html body h6 {
+  font-weight: 600;
+  font-size: 1.2rem;
+  line-height: 1.2rem;
+  margin: 0;
+  padding: 0;
+}
+
+html body p {
+  font-size: 1rem;
+  font-family: 'OpenSans-Regular';
+  font-style: normal;
+  font-weight: normal;
+  margin: 0;
+  padding: 0;
+}
+
+html body a {
+  text-decoration: none;
+  -webkit-transition: all 0.3s ease;
+  -o-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+}
+
+html body a:hover {
+  opacity: 0.7;
+}
+
+html body a:visited {
+  background-color: rgba(0, 0, 0, 0.4) !important;
+}
+
+html body hr {
+  border: 0;
+  height: 2px;
+  background-image: linear-gradient(to right, rgba(50, 61, 26, 0), rgba(50, 61, 26, 0.75), rgba(50, 61, 26, 0));
+}
+
+.italic {
+  font-weight: 400;
+  font-style: italic;
+}
+
+.bold {
+  font-weight: 600 !important;
+}
+
+.xbold {
+  font-family: 'OpenSans-Bold';
+  font-weight: 800 !important;
+}
+
+.light {
+  font-family: 'OpenSans-Light';
+  font-weight: 300 !important;
+}
+
+.txtDerecha {
+  text-align: left !important;
+}
+
+.txtIzquierda {
+  text-align: right !important;
+}
+
+.txtCentrado {
+  text-align: center !important;
+}
+
+@media only screen and (max-width: 767px) {
+  .incrementFont {
+    font-size: 0.9em !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .incrementFont {
+    font-size: 1.0em !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .incrementFont {
+    font-size: 1.1em !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .incrementFont {
+    font-size: 1.4em !important;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .incrementFontMax {
+    font-size: 1em !important;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  .incrementFontMax {
+    font-size: 1.1em !important;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  .incrementFontMax {
+    font-size: 1.2em !important;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .incrementFontMax {
+    font-size: 1.45em !important;
+  }
+}

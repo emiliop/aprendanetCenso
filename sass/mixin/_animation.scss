@@ -1,0 +1,45 @@
+/*============================================================*/
+/*Mixin Animation Header*/
+@mixin m_circle_animation($name)
+{
+	-webkit-animation: $name 1s forwards;
+	-moz-animation: $name 1s forwards;
+	animation: $name 1s forwards;
+}
+
+@-webkit-keyframes cnpv-out {
+  100% {
+    width:20rem;
+    height:20rem;
+    opacity: 1;
+  }
+}
+
+@-moz-keyframes cnpv-out {
+  100% {
+    width:20rem;
+    height:20rem;
+    opacity: 1;
+  }
+}
+
+@keyframes cnpv-out {
+  100% {
+    width:20rem;
+    height:20rem;
+    opacity: 1;
+  }
+}
+
+
+/*delays*/
+$totalItems:10;
+@for $i from 0 through $totalItems
+{
+  .delay#{$i}
+  {
+    animation-delay: #{($i*.5)}s !important;
+    -webkit-animation-delay: #{($i*.5)}s !important;
+    -o-animation-delay: #{($i*.5)}s !important;
+  }
+}

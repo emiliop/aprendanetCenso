@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 16.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<!DOCTYPE svg PUBLIC "-//W3C//DTD SVG 1.1//EN" "http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd">
+<svg version="1.1" id="Capa_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 width="44.75px" height="44.75px" viewBox="0 0 44.75 44.75" style="enable-background:new 0 0 44.75 44.75;" xml:space="preserve"
+	>
+<style type="text/css">
+<![CDATA[
+		.st0{
+	fill:transparent;
+	stroke:#A4266D; 
+	stroke-width:1; 
+	stroke-dasharray:140;
+	stroke-dashoffset:0;
+	stroke-miterlimit:10;
+	-webkit-animation: animacion 1s infinite 3s;
+	-moz-animation: animacion 1s infinite 3s;
+	animation: animacion 1s infinite 3s;	
+	}
+
+	@-webkit-keyframes animacion {
+		0%{
+			stroke-dahoffset:140;
+			fill: transparent;
+			margin-left:100%;
+			width:300%
+		}
+		50%{
+			stroke: #7F7F7F;
+			fill: #7F7F7F;
+		}
+		100%{
+			stroke-dashoffset:0;
+			fill:#A4266D; 
+			stroke:transparent;
+			margin-left:0%;
+			width:100%;
+		}
+	}
+
+	@keyframes animacion {
+		0%{
+			stroke-dahoffset:140;
+			fill: transparent;
+		}
+		50%{
+			stroke: #7F7F7F;
+			fill: #D362A5;
+		}
+		100%{
+			stroke-dashoffset:0;
+			fill:#A4266D; 
+			stroke:transparent;
+
+		}
+	}
+	.st1{fill:#de007d;}
+]]>
+</style>
+<g id="Capa_1">
+	<g>
+		<path class="st1" d="M22.375,43.214c-11.49,0-20.838-9.35-20.838-20.838c0-11.49,9.348-20.84,20.838-20.84
+			s20.838,9.35,20.838,20.84S33.866,43.214,22.375,43.214z M22.375,2.538c-10.938,0-19.838,8.9-19.838,19.842
+			c0,10.938,8.9,19.838,19.838,19.838c10.939,0,19.838-8.898,19.838-19.838C42.213,11.438,33.314,2.538,22.375,2.538z"/>
+		<circle class="st1" cx="22.375" cy="22.376" r="15.008"/>
+	</g>
+</g>
+<g id="Capa_2">
+	<g id="btn1" fill-opacity="0" class="area" data-indicacionesArea="1" cursor="pointer">
+		<path class="st0" d="M22.375,43.214c-11.49,0-20.838-9.35-20.838-20.838c0-11.49,9.348-20.84,20.838-20.84
+			s20.838,9.35,20.838,20.84S33.866,43.214,22.375,43.214z M22.375,2.538c-10.938,0-19.838,8.9-19.838,19.842
+			c0,10.938,8.9,19.838,19.838,19.838c10.939,0,19.838-8.898,19.838-19.838C42.213,11.438,33.314,2.538,22.375,2.538z"/>
+		<circle class="st0" cx="22.375" cy="22.376" r="15.008"/>
+	</g>
+</g>
+</svg>

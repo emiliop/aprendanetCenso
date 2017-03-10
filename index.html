@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+
+        <title>::: Dispositivo Móvil de Captura (DMC) :::</title>
+
+        <link rel="stylesheet" href="css/fonts.css">
+        <link rel="stylesheet" href="css/normalize.css">
+        <link rel="stylesheet" href="css/animate.min.css">
+        <link rel="stylesheet" href="css/hover.css">
+
+        <link rel="stylesheet" href="css/estructura.css">
+        <link rel="stylesheet" href="css/component.css">
+
+        <!---ESTILOS ESPECIFICOS-->
+        <link rel="stylesheet" href="css/prefabs.css">
+        <link rel="stylesheet" href="css/reticula.css">
+        <!-- ESTILOS ADICIONALES-->
+        <link rel="stylesheet" href="css/adicionales.css">
+
+
+
+    </head>
+
+    <body class="th-Censista" onload="loadSound();">
+        <div id="precarga">
+            <img src="images/interfaz/loader.gif" alt="">
+            <h2>0%</h2>
+        </div>
+
+        <div class="container">
+
+            <!--Header-->
+            <div class="header-superior nocolor">
+                <div class="operacion">
+                    <h1>CNPV</h1>
+                    <p>Censo Nacional de Pobación y Vivienda</p>
+                </div>
+                <!-- Este es el Menu Horizontal -->
+                <div class="contentMenuTema">
+                    <div id="btn-Menu">Menú</div>
+                    <div id="tema"></div>
+                </div>
+
+                <ul id="menu" style="display: flex;"></ul>
+
+                <div class="logo-plantilla">
+                    <img src="images/interfaz/logosAlpha.png" alt="logo"/>
+                </div>
+            </div>
+
+            <!-- Este es el Menu Vertical -->
+            <ul id="verticalMenu">
+            </ul>
+
+            <!---Esta es la barra de progreso-->
+            <div class="cnt-progressBar">
+                <div id="progressBar">
+                    <div>
+                        &nbsp;
+                    </div>
+                </div>
+                <div class="drag-progressBar nomodelocaja" data-num="P"></div>
+            </div>
+
+            <div id="miga"></div>
+            <!---este es el contenido-->
+            <div id="contenido"></div>
+
+
+            <!--este es el modal-->
+            <div class="modal" id="modal">
+                <div class="contenidoModal" id="contModal">&nbsp;</div>
+            </div>
+
+        </div>
+
+        <div id="btn-setting" data-hide="true" ><i class="icon-cog"></i></div>
+
+        <div id="settings">
+            <div><i id="btn-fontsize" data-select="true" class="icon-font-size"></i></div>
+            <div><i id="btn-contrast" class="icon-contrast"></i></div>
+        </div>
+
+        <script src="scorm/SCORM_API_wrapper.js" type="text/javascript"></script>
+        <script src="js/jquery.min.js" type="text/javascript"></script>
+        <script src="js/jquery.mobile-1.4.5.min.js"></script>
+        <script src="js/jquery.browser.js" type="text/javascript"></script>
+        <script src="js/jquery-ui.min.js" type="text/javascript"></script>
+        <script src="js/jquery.magic-accordion.min.js" type="text/javascript"></script>
+        <script src="js/jquery.ui.touch-punch.min.js" type="text/javascript"></script>
+        <script src="js/utility.js" type="text/javascript"></script>
+        <script src="js/wordsearch.js" type="text/javascript"></script>
+        <script src="js/preload.js" type="text/javascript"></script>
+        <script src="js/soundjs-0.6.2.min.js" type="text/javascript"></script>
+        <script src="js/preloadjs-0.6.2.min.js" type="text/javascript"></script>
+        <script src="scorm/scorm.js" type="text/javascript"></script>
+        <script src="js/functions.js" type="text/javascript"></script>
+        
+        <script src="js/activities/jquery.selectCorrect.js" type="text/javascript" ></script>
+    </body>
+</html>
+
